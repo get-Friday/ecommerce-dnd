@@ -1,7 +1,7 @@
 {
     "productsList": [
         {
-            "id_product": 1,
+            "id": 1,
             "category": "sourceBook",
             "id_category": 1,
             "name_product": "Fizbans Treasury of Dragons",
@@ -10,7 +10,7 @@
             "description": "Faça seus dragões voarem a novas alturas com este suplemento para o maior jogo de RPG do mundo."
         },
         {
-            "id_product": 2,
+            "id": 2,
             "category": "sourceBook",
             "id_category": 1,
             "name_product": "Players Handbook",
