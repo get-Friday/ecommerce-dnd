@@ -23,3 +23,29 @@ export const Logo = styled.div`
     color: #F00;
     font-size: 4rem;
 `
+
+export const ShoppingContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+`
+
+export const UserContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
+
+export const TextContainer = styled.p`
+    margin: 0;
+    margin-top: 5px;
+
+    font-size: 1.2em;
+`
+
+export const CartContainer = styled.div`
+    
+`
