@@ -1,0 +1,22 @@
+{
+    "productsList": [
+        {
+            "id_product": 1,
+            "category": "sourceBook",
+            "id_category": 1,
+            "name_product": "Fizbans Treasury of Dragons",
+            "price": 270.40,
+            "image": "/products/books/fizbans.jpg",
+            "description": "Faça seus dragões voarem a novas alturas com este suplemento para o maior jogo de RPG do mundo."
+        },
+        {
+            "id_product": 2,
+            "category": "sourceBook",
+            "id_category": 1,
+            "name_product": "Players Handbook",
+            "price": 185.90,
+            "image": "/products/books/phb.jpg",
+            "description": "Tudo o que um jogador precisa para criar personagens heróicos para Dungeons & Dragons, o maior RPG do mundo."
+        }
+    ]
+}
