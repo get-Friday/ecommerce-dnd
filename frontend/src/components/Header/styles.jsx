@@ -47,5 +47,6 @@ export const TextContainer = styled.p`
 `
 
 export const CartContainer = styled.div`
-    
+    margin-left: 25px;
+    font-size: 1.5em;
 `
