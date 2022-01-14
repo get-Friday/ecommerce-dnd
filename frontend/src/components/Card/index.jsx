@@ -1,9 +1,12 @@
-import { Component } from 'react'
-import Api from '../../services/Api'
+import { useState, useEffect } from 'react'
+import api from '../../services/Api'
 
-import { DetailsWrapper, ImageContainer, ImageLink,CardWrapper } from './styles'
+import { DetailsWrapper, ImageContainer, ImageLink, CardWrapper, FeaturedTag } from './styles'
 
 import ButtonApp from '../Button'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-regular-svg-icons'
 
 const initialState = {
     id: '',
@@ -21,34 +24,44 @@ const currency = new Intl.NumberFormat('pt-BR', {
     currency: 'BRL'
 })
 
-class Card extends Component {
+const Card = ({ productId }) => {
     
-    state = {...initialState}
+    console.log(productId)
 
-    componentDidMount() {
-        Api
-        .get('/productsList/1')
+    const [product, setProduct] = useState(initialState)
+
+    useEffect(() => {
+        api
+        .get(`/productsList/${productId}`)
         .then((res) => {
-            this.setState(res.data)
-            // productslist traz um array de objetos, filtrar esse array para imprimir na tela onde feature: true
+            setProduct(res.data)
         })
+    }, [])
+
+    const featuredIcon = () => {
+        const featured = product.featured
+        return featured ? 'flex' : 'none'
     }
-    
-    render(){
-        return(
-            <CardWrapper>
-                <ImageContainer>
-                    <ImageLink src={this.state.image} alt={this.state.name_product} />
-                </ImageContainer>
-                <DetailsWrapper>
-                    <h2>{this.state.name_product}</h2>
-                    <p>{this.state.description}</p>
-                    <p>Disponível | {currency.format(this.state.price)}</p>
-                    <ButtonApp>Comprar</ButtonApp>
-                </DetailsWrapper>
-            </CardWrapper>
-        )
-    }
+
+ 
+    return(
+        <CardWrapper>
+            <ImageContainer>
+                <ImageLink src={product.image} alt={product.name_product} />
+            </ImageContainer>
+            <DetailsWrapper>
+                <FeaturedTag display={featuredIcon}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <p>DESTAQUE</p>
+                </FeaturedTag>
+                <h1>{product.name_product}</h1>
+                <p>{product.description}</p>
+                <p>Disponível | {currency.format(product.price)}</p>
+                <ButtonApp>Comprar</ButtonApp>
+            </DetailsWrapper>
+        </CardWrapper>
+    )
+
 }
 
 export default Card

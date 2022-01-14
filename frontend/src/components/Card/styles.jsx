@@ -26,3 +26,19 @@ export const DetailsWrapper = styled.div`
 
     padding: 10px;
 `
+
+export const FeaturedTag = styled.div`
+    display: ${props => props.display};
+
+    background-color: #C4C4C4;
+    border-radius: 18px;
+
+    padding: 10px;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    p {
+        margin: 0 0 0 5px;
+    }
+`

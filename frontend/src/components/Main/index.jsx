@@ -18,9 +18,11 @@ const Main = () => {
                         <LinkMenu href="#">Mapas</LinkMenu>
                     </AsideWrapper>
                     <CardContainer>
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card productId='1'/>
+                        <Card productId='2'/>
+                        <Card productId='3'/>
+                        <Card productId='4'/>
+                        <Card productId='5'/>
                     </CardContainer>
                 </ContentWrapper>
             </MainWrapper>
