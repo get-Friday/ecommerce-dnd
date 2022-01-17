@@ -16,7 +16,7 @@ const App = () => {
             <Main>
                 <AsideWrapper>
                     <MenuP>
-                        <Link to='/'>
+                        <Link to='/featured'>
                             Destaques
                         </Link>
                     </MenuP>
