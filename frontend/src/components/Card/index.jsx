@@ -26,8 +26,6 @@ const currency = new Intl.NumberFormat('pt-BR', {
 
 const Card = ({ productId }) => {
     
-    console.log(productId)
-
     const [product, setProduct] = useState(initialState)
 
     useEffect(() => {

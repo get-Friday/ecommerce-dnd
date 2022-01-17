@@ -8,7 +8,7 @@
             "price": 270.40,
             "featured": true,
             "image": "/products/books/fizbans.jpeg",
-            "description": "Faça seus dragões voarem a novas alturas com este suplemento para o maior jogo de RPG do mundo"
+            "description": "Faça seus dragões voarem a novas alturas com este suplemento para o maior jogo de RPG do mundo."
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "price": 185.90,
             "featured": true,
             "image": "/products/books/phb.jpeg",
-            "description": "Tudo o que um jogador precisa para criar personagens heróicos para Dungeons & Dragons, o maior RPG do mundo"
+            "description": "Tudo o que um jogador precisa para criar personagens heróicos para Dungeons & Dragons, o maior RPG do mundo."
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "price": 288.12,
             "featured": true,
             "image": "/products/books/strixhaven.jpeg",
-            "description": "Explore Strixhaven no mais recente cenário de campanha de Magic: The Gathering para Dungeons & Dragons"
+            "description": "Explore Strixhaven no mais recente cenário de campanha de Magic: The Gathering para Dungeons & Dragons."
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "price": 228.05,
             "featured": true,
             "image": "/products/books/tashas.jpeg",
-            "description": "Uma mistura mágica de novas opções de regras para jogadores e mestres de Dungeons & Dragons"
+            "description": "Uma mistura mágica de novas opções de regras para jogadores e mestres de Dungeons & Dragons."
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@
             "price": 231.82,
             "featured": true,
             "image": "/products/books/witchlight.jpeg",
-            "description": "Uma aventura perversamente caprichosa para Dungeons & Dragons, o maior jogo de RPG do mundo"
+            "description": "Uma aventura perversamente caprichosa para Dungeons & Dragons, o maior jogo de RPG do mundo."
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@
             "price": 172.70,
             "featured": false,
             "image": "/products/books/mm.jpeg",
-            "description": "Uma coleção de monstros mortais para Dungeons & Dragons, o maior jogo de RPG do mundo. O bestiário de fantasia de A a Z"
+            "description": "Uma coleção de monstros mortais para Dungeons & Dragons, o maior jogo de RPG do mundo. O bestiário de fantasia de A a Z."
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@
             "price": 211.60,
             "featured": false,
             "image": "/products/books/tomeoffoes.jpeg",
-            "description": "Descubra a verdade sobre os grandes conflitos do multiverso de D&D neste suplemento para o maior RPG do mundo"
+            "description": "Descubra a verdade sobre os grandes conflitos do multiverso de D&D neste suplemento para o maior RPG do mundo."
         },
         {
             "id": 8,
@@ -78,7 +78,7 @@
             "price": 185.90,
             "featured": false,
             "image": "/products/books/dmg.jpeg",
-            "description": "Tudo o que um Dungeon Master precisa para tecer histórias lendárias para o maior RPG do mundo. Entreter e inspirar seus jogadores"
+            "description": "Tudo o que um Dungeon Master precisa para tecer histórias lendárias para o maior RPG do mundo. Entreter e inspirar seus jogadores."
         },
         {
             "id": 9,
@@ -88,7 +88,7 @@
             "price": 229.32,
             "featured": false,
             "image": "/products/books/ravnica.jpeg",
-            "description": "Explore uma paisagem urbana mundial repleta de aventura e intriga neste cenário de campanha para o maior jogo de RPG do mundo"
+            "description": "Explore uma paisagem urbana mundial repleta de aventura e intriga neste cenário de campanha para o maior jogo de RPG do mundo."
         },
         {
             "id": 10,
@@ -98,7 +98,7 @@
             "price": 174.13,
             "featured": false,
             "image": "/products/books/xanathar.jpeg",
-            "description": "Explore uma variedade de novas opções de regras para jogadores e Mestres neste suplemento para o maior jogo de RPG do mundo"
+            "description": "Explore uma variedade de novas opções de regras para jogadores e Mestres neste suplemento para o maior jogo de RPG do mundo."
         },
         {
             "id": 11,
@@ -108,7 +108,7 @@
             "price": 269.16,
             "featured": false,
             "image": "/products/books/volos.jpeg",
-            "description": "Mergulhe no conhecimento de monstros neste suplemento para o maior jogo de RPG do mundo"
+            "description": "Mergulhe no conhecimento de monstros neste suplemento para o maior jogo de RPG do mundo."
         }
     ]
 }
