@@ -109,6 +109,136 @@
             "featured": false,
             "image": "/products/books/volos.jpeg",
             "description": "Mergulhe no conhecimento de monstros neste suplemento para o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 12,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Candlekeep Mysteries",
+            "price": 221.87,
+            "featured": false,
+            "image": "/products/books/candlekeep.jpeg",
+            "description": "Uma antologia de dezessete aventuras temáticas de mistério para Dungeons & Dragons, o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 13,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Curse of Strahd",
+            "price": 175.90,
+            "featured": false,
+            "image": "/products/books/strahd.jpeg",
+            "description": "Desvende os mistérios de Ravenloft nesta terrível aventura para o maior jogo de RPG do mundo. Preso pelo Destino."
+        },
+        {
+            "id": 14,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Ghosts of Saltmarsh",
+            "price": 229.98,
+            "featured": false,
+            "image": "/products/books/saltmarsh.jpeg",
+            "description": "Explore as ondas acima e as braças abaixo nestas aventuras aquáticas para o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 15,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Icewind Dale, Rime of the Frostmaiden",
+            "price": 239.36,
+            "featured": false,
+            "image": "/products/books/frostmaiden.jpeg",
+            "description": "Sinta o toque frio da morte nesta aventura para o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 16,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Hoard of the Dragon Queen",
+            "price": 185.96,
+            "featured": false,
+            "image": "/products/books/hotdq.jpeg",
+            "description": "Lute contra a tirania dracônica nesta aventura para o maior jogo de RPG do mundo. A Costa da Espada está sob cerco."
+        },
+        {
+            "id": 17,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Rise of Tiamat",
+            "price": 187.25,
+            "featured": false,
+            "image": "/products/books/riseoftiamat.jpeg",
+            "description": "Evite o retorno cataclísmico de Tiamat nesta aventura para o maior jogo de RPG do mundo. Impeça a Rainha dos Dragões Malignos."
+        },
+        {
+            "id": 18,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Lost Mine of Phandelver",
+            "price": 84.76,
+            "featured": false,
+            "image": "/products/books/phandelver.jpeg",
+            "description": "Explore labirintos subterrâneos! Saqueie tesouros! Lute contra monstros lendários!"
+        },
+        {
+            "id": 19,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Out of the Abyss",
+            "price": 312.34,
+            "featured": false,
+            "image": "/products/books/oota.jpeg",
+            "description": "Atreva-se a descer ao Subterrâneo nesta aventura para o maior jogo de RPG do mundo. A loucura é a única fuga."
+        },
+        {
+            "id": 20,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Storm Kings Thunder",
+            "price": 325.01,
+            "featured": false,
+            "image": "/products/books/stormking.jpeg",
+            "description": "Fique com ou contra os gigantes nesta aventura para o maior jogo de RPG do mundo. Para lutar contra gigantes, você deve ser gigante."
+        },
+        {
+            "id": 21,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Baldurs Gate: Descent Into Avernus",
+            "price": 235.96,
+            "featured": false,
+            "image": "/products/books/avernus.jpeg",
+            "description": "Perigos diabólicos aguardam nesta aventura para o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 22,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Tales from the Yawning Portal",
+            "price": 245.66,
+            "featured": false,
+            "image": "/products/books/yawningportal.jpeg",
+            "description": "Explore sete masmorras mortais neste suplemento de aventura para o maior jogo de RPG do mundo. Contos de terror contados na calada da noite."
+        },
+        {
+            "id": 23,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Waterdeep: Dragon Heist",
+            "price": 207.60,
+            "featured": false,
+            "image": "/products/books/dragonheist.jpeg",
+            "description": "Um tesouro fantástico está à sua disposição nesta aventura para o maior jogo de RPG do mundo."
+        },
+        {
+            "id": 24,
+            "category": "adventure",
+            "id_category": 2,
+            "name_product": "Waterdeep: Dungeon of the Mad Mage",
+            "price": 220.44,
+            "featured": false,
+            "image": "/products/books/madmage.jpeg",
+            "description": "Explore a mega-masmorra de Sobremontanha nesta aventura para o maior jogo de RPG do mundo."
         }
     ]
 }
