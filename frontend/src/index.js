@@ -9,6 +9,7 @@ import {
 import App from './App';
 import Featured from './routes/featured'
 import SourceBooks from './routes/sourcebooks'
+import Adventures from './routes/adventures';
 
 ReactDOM.render(
   <Router>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path='/' element={<App />}>
         <Route path='featured' element={<Featured />} />
         <Route path='sourcebooks' element={<SourceBooks />} />
+        <Route path='adventures' element={<Adventures />} />
         <Route
           path="*"
           element={
