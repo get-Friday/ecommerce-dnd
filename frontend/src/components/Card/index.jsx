@@ -31,10 +31,8 @@ const Card = ({ productId }) => {
     useEffect(() => {
         api
         .get(`/productsList/${productId}`)
-        .then((res) => {
-            setProduct(res.data)
-        })
-    }, [])
+        .then((res) => setProduct(res.data))
+    }, [productId])
 
     const featuredIcon = () => {
         const featured = product.featured

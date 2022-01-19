@@ -1,49 +1,41 @@
 import { MainContainer, MainWrapper, ContentWrapper, CardContainer, AsideWrapper, MenuP  } from "./styles"
 
-import { Outlet, Link } from 'react-router-dom'
-
 import Carousel from "../Carousel"
+import ListCards from '../ListCards'
+
+import { useState } from "react"
 
 const Main = () => {
+
+    const [category, setCategory] = useState(0)
+
     return(
         <MainContainer>
             <MainWrapper>
                 <Carousel />
                 <ContentWrapper>
                     <AsideWrapper>
-                        <MenuP>
-                            <Link to='/featured'>
-                                Destaques
-                            </Link>
+                        <MenuP isActive={category === 0} onClick={() => setCategory(0)}>
+                            Destaques
                         </MenuP>
                         <MenuP>
-                            <Link to='/blundes'>
-                                Pacotes
-                            </Link>
+                            Pacotes
+                        </MenuP>
+                        <MenuP isActive={category === 1} onClick={() => setCategory(1)}>
+                            Livros fonte
+                        </MenuP>
+                        <MenuP isActive={category === 2} onClick={() => setCategory(2)}>
+                            Aventuras
                         </MenuP>
                         <MenuP>
-                            <Link to='/sourcebooks'>
-                                Livros fonte
-                            </Link>
+                            Dados
                         </MenuP>
                         <MenuP>
-                            <Link to='/adventures'>
-                                Aventuras
-                            </Link>
-                        </MenuP>
-                        <MenuP>
-                            <Link to='/dices'>
-                                Dados
-                            </Link>
-                        </MenuP>
-                        <MenuP>
-                            <Link to='/maps'>
-                                Mapas
-                            </Link>
+                            Mapas
                         </MenuP>
                     </AsideWrapper>
                     <CardContainer>
-                        <Outlet />
+                        <ListCards featured={category === 0} categoryId={category}/>
                     </CardContainer>
                 </ContentWrapper>
             </MainWrapper>

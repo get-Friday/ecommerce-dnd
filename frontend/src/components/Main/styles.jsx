@@ -28,6 +28,7 @@ flex-direction: column;
 justify-content: flex-start;
 
 padding: 10px;
+
 `
 
 export const CardContainer = styled.div`
@@ -46,7 +47,10 @@ export const MenuP = styled.p`
     font-size: 24px;
     
     width: max-content;
+
+    font-weight: ${props => props.isActive && '700'};
     
+    cursor: pointer;
     a {
         color: #000;
         text-decoration: none;

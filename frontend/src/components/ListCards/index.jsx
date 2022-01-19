@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 
-import api from '../services/Api'
+import api from '../../services/Api'
 
-import Card from '../components/Card'
+import Card from '../Card'
 
-const SourceBooks = () => {
+const SourceBooks = ({ featured ,categoryId }) => {
 
     const [product, setProduct] = useState([])
 
@@ -14,7 +14,7 @@ const SourceBooks = () => {
         .then((res) => setProduct(res.data))
     }, [])
 
-    const filter = product.filter(element => element.id_category === 1)
+    const filter = product.filter(element => featured ? element.featured : element.id_category === categoryId)
 
     return filter.map( el => (
         <Card productId={el.id} />

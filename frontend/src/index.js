@@ -1,33 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { 
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
 
 import App from './App';
-import Featured from './routes/featured'
-import SourceBooks from './routes/sourcebooks'
-import Adventures from './routes/adventures';
 
 ReactDOM.render(
-  <Router>
-    <Routes>
-      <Route path='/' element={<App />}>
-        <Route path='featured' element={<Featured />} />
-        <Route path='sourcebooks' element={<SourceBooks />} />
-        <Route path='adventures' element={<Adventures />} />
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>Não tem nada aqui!</p>
-            </main>
-          }
-        />
-      </Route>
-    </Routes>
-  </Router>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
