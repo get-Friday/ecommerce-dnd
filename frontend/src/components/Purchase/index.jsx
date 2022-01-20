@@ -1,6 +1,12 @@
 import { PurchaseContainer, PurchaseWrapper, Break, ContentWrapper, TableContainer, ProductsTable, TableRow, TableHeader, TableData, SubtotalContainer, Oversize} from './styles'
 
-const Purchase = () => {
+const currency = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+})
+
+const Purchase = ({ cartItems }) => {
+
     return(
         <PurchaseContainer>
             <PurchaseWrapper>
@@ -8,17 +14,34 @@ const Purchase = () => {
                 <Break />
                 <ContentWrapper>
                     <TableContainer>
-                        Detalhes do pedido
+                        {cartItems.length ? 'Detalhes do pedido' : 'Carrinho vazio'}
                         <ProductsTable>
-                            <TableRow>
-                                <TableHeader theme={Oversize}>PRODUTO</TableHeader>
-                                <TableHeader>TIPO</TableHeader>
-                                <TableHeader>PREÇO</TableHeader>
-                                <TableHeader>AÇÃO</TableHeader>
-                            </TableRow>
-                            <TableRow>
-                                <TableData>PRODUTO</TableData>
-                            </TableRow>
+                            <thead>
+                                <TableRow>
+                                    <TableHeader theme={Oversize}>PRODUTO</TableHeader>
+                                    <TableHeader>TIPO</TableHeader>
+                                    <TableHeader>PREÇO</TableHeader>
+                                    <TableHeader>AÇÃO</TableHeader>
+                                </TableRow>
+                            </thead>
+                            <tbody>
+                                {cartItems.forEach(product => {
+                                    <TableRow>
+                                        <TableData>
+                                            {product.name_product}
+                                        </TableData>
+                                        <TableData>
+                                            {product.category}
+                                        </TableData>
+                                        <TableData>
+                                            {currency.format(product.price)}
+                                        </TableData>
+                                        <TableData>
+                                            Ação
+                                        </TableData>
+                                    </TableRow>
+                                })}
+                            </tbody>
                         </ProductsTable>
                     </TableContainer>
                     <SubtotalContainer>

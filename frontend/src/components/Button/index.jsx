@@ -1,9 +1,10 @@
 import { Button } from "./styles";
 
-const ButtonApp = (props) => {
+const ButtonApp = ({ children, onAdd }) => {
+
     return(
-        <Button>
-            {props.children}
+        <Button onClick={onAdd}>
+            {children}
         </Button>
     )
 }

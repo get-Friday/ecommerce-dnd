@@ -5,7 +5,7 @@ import ListCards from '../ListCards'
 
 import { useState } from "react"
 
-const Main = () => {
+const Main = ({ onAdd }) => {
 
     const [category, setCategory] = useState(0)
 
@@ -35,7 +35,7 @@ const Main = () => {
                         </MenuP>
                     </AsideWrapper>
                     <CardContainer>
-                        <ListCards featured={category === 0} categoryId={category}/>
+                        <ListCards onAdd={onAdd} featured={category === 0} categoryId={category}/>
                     </CardContainer>
                 </ContentWrapper>
             </MainWrapper>

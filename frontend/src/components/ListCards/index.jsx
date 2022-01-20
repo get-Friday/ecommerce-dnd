@@ -4,7 +4,7 @@ import api from '../../services/Api'
 
 import Card from '../Card'
 
-const SourceBooks = ({ featured ,categoryId }) => {
+const SourceBooks = ({ featured, categoryId, onAdd }) => {
 
     const [product, setProduct] = useState([])
 
@@ -17,7 +17,7 @@ const SourceBooks = ({ featured ,categoryId }) => {
     const filter = product.filter(element => featured ? element.featured : element.id_category === categoryId)
 
     return filter.map( el => (
-        <Card productId={el.id} />
+        <Card onAdd={onAdd} productId={el.id} />
     ))
 }
 

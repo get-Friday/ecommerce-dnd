@@ -24,7 +24,7 @@ const currency = new Intl.NumberFormat('pt-BR', {
     currency: 'BRL'
 })
 
-const Card = ({ productId }) => {
+const Card = ({ productId, onAdd }) => {
     
     const [product, setProduct] = useState(initialState)
 
@@ -38,7 +38,6 @@ const Card = ({ productId }) => {
         const featured = product.featured
         return featured ? 'flex' : 'none'
     }
-
  
     return(
         <CardWrapper>
@@ -53,7 +52,7 @@ const Card = ({ productId }) => {
                 <h1>{product.name_product}</h1>
                 <p>{product.description}</p>
                 <p>Disponível | {currency.format(product.price)}</p>
-                <ButtonApp>Comprar</ButtonApp>
+                <ButtonApp onAdd={() => onAdd(product)}>Comprar</ButtonApp>
             </DetailsWrapper>
         </CardWrapper>
     )
