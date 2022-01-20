@@ -9,6 +9,10 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a { 
+        text-decoration: none;
+    }
 `
 
 export const HeaderWrapper = styled.div`
@@ -20,8 +24,11 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Logo = styled.div`
-    color: #F00;
     font-size: 4rem;
+    
+    a {
+        color: #F00;
+    }
 `
 
 export const ShoppingContainer = styled.div`
@@ -49,4 +56,8 @@ export const TextContainer = styled.p`
 export const CartContainer = styled.div`
     margin-left: 25px;
     font-size: 1.5em;
+
+    a {
+        color: #FFF;
+    }
 `

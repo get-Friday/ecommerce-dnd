@@ -1,4 +1,5 @@
 import { PurchaseContainer, PurchaseWrapper, Break, ContentWrapper, TableContainer, ProductsTable, TableRow, TableHeader, TableData, SubtotalContainer, Oversize} from './styles'
+
 const Purchase = () => {
     return(
         <PurchaseContainer>

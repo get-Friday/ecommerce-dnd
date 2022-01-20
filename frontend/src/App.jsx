@@ -1,5 +1,10 @@
 import React from 'react'
 
+import {
+    Route,
+    Routes
+} from 'react-router-dom'
+
 import GlobalStyle from './globalStyles'
 import Header from './components/Header'
 import Main from './components/Main'
@@ -10,7 +15,10 @@ const App = () => {
         <>
             <GlobalStyle />
             <Header />
-            <Main />
+            <Routes>
+                <Route exact path='/' element={<Main />}/>
+                <Route path='/purchase' element={<Purchase />}/>
+            </Routes>
         </>
     )
 }

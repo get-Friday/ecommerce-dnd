@@ -3,6 +3,8 @@ import { HeaderContainer, HeaderWrapper, Logo, ShoppingContainer, UserContainer,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
+import { Link } from 'react-router-dom'
+
 import SearchBar from '../SearchBar'
 
 const Header = () => {
@@ -10,7 +12,9 @@ const Header = () => {
         <HeaderContainer>
             <HeaderWrapper>
                 <Logo>
-                    DND Store
+                    <Link to='/'>
+                        DND Store
+                    </Link>
                 </Logo>
                 <SearchBar />
                 <ShoppingContainer>
@@ -19,7 +23,9 @@ const Header = () => {
                         <TextContainer>Sua conta<FontAwesomeIcon icon={faCaretDown} /></TextContainer>
                     </UserContainer>
                     <CartContainer>
-                        <FontAwesomeIcon icon={faShoppingCart} />Carrinho
+                        <Link to='/purchase'>
+                            <FontAwesomeIcon icon={faShoppingCart} />Carrinho
+                        </Link>
                     </CartContainer>
                 </ShoppingContainer>
             </HeaderWrapper>
