@@ -27,7 +27,7 @@ const Main = ({ onAdd }) => {
                         <MenuP isActive={category === 2} onClick={() => setCategory(2)}>
                             Aventuras
                         </MenuP>
-                        <MenuP>
+                        <MenuP isActive={category === 2} onClick={() => setCategory(3)}>
                             Dados
                         </MenuP>
                         <MenuP>
