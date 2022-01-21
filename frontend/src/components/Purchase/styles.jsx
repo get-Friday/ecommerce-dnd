@@ -45,7 +45,13 @@ export const Break = styled.hr`
 export const ProductsTable = styled.table`
     border: none;
 
-    padding: 10px;
+    border-collapse: collapse;
+
+    margin: 10px;
+`
+
+export const TableBody = styled.tbody`
+    border: 1px solid lightgray;
 `
 
 export const TableRow = styled.tr`
@@ -53,18 +59,33 @@ export const TableRow = styled.tr`
 `
 
 export const TableHeader = styled.th`
-    background-color: #E9E9E9;
+    border: 1px solid lightgray;
+    border-bottom: 3px solid gray;
 
-    padding: 5px;
+    padding: 10px;
 
     width: ${props => props.theme.size};
 `
 
 export const TableData = styled.td`
-    background-color: #C4C4C4;
+    background-color: #F7F7F7;
 
-    padding: 5px;
+    padding: 10px;
+
+    text-align: ${props => props.theme.content};
 `
+
+// PROPERTIES
+
+TableData.defaultProps = {
+    theme: {
+        content: 'center'
+    }
+}
+
+export const AlignLeft = {
+    content: 'left'
+}
 
 TableHeader.defaultProps = {
     theme: {
@@ -73,5 +94,9 @@ TableHeader.defaultProps = {
 }
 
 export const Oversize = {
-    size: '404px'
+    size: '333px'
+}
+
+export const Undersize = {
+    size: '71px'
 }

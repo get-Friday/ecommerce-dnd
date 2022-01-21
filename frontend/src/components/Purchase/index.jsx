@@ -1,4 +1,4 @@
-import { PurchaseContainer, PurchaseWrapper, Break, ContentWrapper, TableContainer, ProductsTable, TableRow, TableHeader, TableData, SubtotalContainer, Oversize} from './styles'
+import { PurchaseContainer, PurchaseWrapper, Break, ContentWrapper, TableContainer, ProductsTable, TableBody, TableRow, TableHeader, TableData, SubtotalContainer, Oversize, Undersize, AlignLeft} from './styles'
 
 const currency = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -18,30 +18,36 @@ const Purchase = ({ cartItems }) => {
                         <ProductsTable>
                             <thead>
                                 <TableRow>
+                                    <TableHeader theme={Undersize}>QNT</TableHeader>
                                     <TableHeader theme={Oversize}>PRODUTO</TableHeader>
                                     <TableHeader>TIPO</TableHeader>
                                     <TableHeader>PREÇO</TableHeader>
                                     <TableHeader>AÇÃO</TableHeader>
                                 </TableRow>
                             </thead>
-                            <tbody>
-                                {cartItems.forEach(product => {
-                                    <TableRow>
-                                        <TableData>
-                                            {product.name_product}
-                                        </TableData>
-                                        <TableData>
-                                            {product.category}
-                                        </TableData>
-                                        <TableData>
-                                            {currency.format(product.price)}
-                                        </TableData>
-                                        <TableData>
-                                            Ação
-                                        </TableData>
-                                    </TableRow>
+                            <TableBody>
+                                {cartItems.map(product => {
+                                    return(
+                                        <TableRow>
+                                            <TableData>
+                                                {product.qty}
+                                            </TableData>
+                                            <TableData theme={AlignLeft}>
+                                                {product.name_product}
+                                            </TableData>
+                                            <TableData>
+                                                {product.category}
+                                            </TableData>
+                                            <TableData>
+                                                {currency.format(product.price * product.qty)}
+                                            </TableData>
+                                            <TableData>
+                                                Ação
+                                            </TableData>
+                                        </TableRow>
+                                    )
                                 })}
-                            </tbody>
+                            </TableBody>
                         </ProductsTable>
                     </TableContainer>
                     <SubtotalContainer>
