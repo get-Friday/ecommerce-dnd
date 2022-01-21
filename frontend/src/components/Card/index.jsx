@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import api from '../../services/Api'
 
-import { DetailsWrapper, ImageContainer, ImageLink, CardWrapper, FeaturedTag } from './styles'
+import { DetailsWrapper, ImageContainer, ImageLink, CardWrapper, TagCard, displayTag } from './styles'
 
 import ButtonApp from '../Button'
 
@@ -33,11 +33,6 @@ const Card = ({ productId, onAdd }) => {
         .get(`/productsList/${productId}`)
         .then((res) => setProduct(res.data))
     }, [productId])
-
-    const featuredIcon = () => {
-        const featured = product.featured
-        return featured ? 'flex' : 'none'
-    }
  
     return(
         <CardWrapper>
@@ -45,10 +40,14 @@ const Card = ({ productId, onAdd }) => {
                 <ImageLink src={product.image} alt={product.name_product} />
             </ImageContainer>
             <DetailsWrapper>
-                <FeaturedTag display={featuredIcon}>
+                <TagCard theme={product.preorder && displayTag}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <p>PRE-VENDA</p>
+                </TagCard>
+                <TagCard theme={product.featured && displayTag}>
                     <FontAwesomeIcon icon={faStar} />
                     <p>DESTAQUE</p>
-                </FeaturedTag>
+                </TagCard>
                 <h1>{product.name_product}</h1>
                 <p>{product.description}</p>
                 <p>Disponível | {currency.format(product.price)}</p>

@@ -27,8 +27,8 @@ export const DetailsWrapper = styled.div`
     padding: 10px;
 `
 
-export const FeaturedTag = styled.div`
-    display: ${props => props.display};
+export const TagCard = styled.div`
+    display: ${props => props.theme.display};
 
     background-color: #C4C4C4;
     border-radius: 18px;
@@ -42,3 +42,15 @@ export const FeaturedTag = styled.div`
         margin: 0 0 0 5px;
     }
 `
+
+// PROPERTIES
+
+TagCard.defaultProps = {
+    theme: {
+        display: 'none'
+    }
+}
+
+export const displayTag = {
+    display: 'flex'
+}

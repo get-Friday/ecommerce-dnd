@@ -14,9 +14,17 @@ const SourceBooks = ({ featured, categoryId, onAdd }) => {
         .then((res) => setProduct(res.data))
     }, [])
 
-    const filter = product.filter(element => featured ? element.featured : element.id_category === categoryId)
+    const filterCategory = product.filter(element => 
+        featured ? element.featured || element.preorder : element.id_category === categoryId
+    )
 
-    return filter.map( el => (
+    const sortPreorder = filterCategory.sort((firstElement) => {
+        if (firstElement.preorder) { 
+            return -1
+        } else return 1
+    })
+    
+    return sortPreorder.map( el => (
         <Card onAdd={onAdd} productId={el.id} />
     ))
 }

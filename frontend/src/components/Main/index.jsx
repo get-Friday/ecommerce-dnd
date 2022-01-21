@@ -35,7 +35,7 @@ const Main = ({ onAdd }) => {
                         </MenuP>
                     </AsideWrapper>
                     <CardContainer>
-                        <ListCards onAdd={onAdd} featured={category === 0} categoryId={category}/>
+                        <ListCards onAdd={onAdd} preorder={category === 0} featured={category === 0} categoryId={category}/>
                     </CardContainer>
                 </ContentWrapper>
             </MainWrapper>
