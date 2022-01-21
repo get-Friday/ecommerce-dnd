@@ -227,7 +227,7 @@
             "id_category": 1,
             "name_product": "Mordenkainen Presents: Monsters of the Multiverse",
             "price": 290.90,
-            "preoder": true,
+            "preorder": true,
             "image": "/products/mpmotm.jpeg",
             "description": "Um bestiário de amigos e inimigos maravilhosos para o maior jogo de RPG do mundo."
         },
