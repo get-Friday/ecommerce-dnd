@@ -60,3 +60,13 @@ export const MenuP = styled.p`
         font-weight: 700;
     }
 `
+
+export const Disabled = styled(MenuP)`
+    cursor: not-allowed;
+
+    color: #0000005a;
+
+    &:hover {
+        font-weight: 100;
+    }
+`

@@ -13,6 +13,10 @@ export const Button = styled.button`
     border: none;
 
     cursor: pointer;
+
+    :hover {
+        background-color: ${props => props.theme.hover};
+    }
 `
 // PROPERTIES
 
@@ -20,18 +24,21 @@ Button.defaultProps = {
     theme: {
         width: '216px',
         height: '63px',
-        backgroundColor: '#0CF0EB'
+        backgroundColor: '#0cf0eb',
+        hover: 'rgba(12, 240, 235, 0.7)'
     }
 }
 
 export const addProduct = {
     width: '30px',
     height: '30px',
-    backgroundColor: '#0CF032'
+    backgroundColor: '#0cf032',
+    hover: 'rgba(12, 240, 50, 0.7)'
 }
 
 export const removeProduct = {
     width: '30px',
     height: '30px',
-    backgroundColor: '#F00C0C'
+    backgroundColor: '#f00c0c',
+    hover: 'rgba(240, 12, 12, 0.7)'
 }

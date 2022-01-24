@@ -36,7 +36,7 @@ const Purchase = ({ cartItems, onRemove, onAdd }) => {
     // ICMS SC = 12%
     const getTaxValue = (totalPrice = getTotalPrice()) => totalPrice = totalPrice * 0.12
 
-    const somaTotal = getTotalPrice() + getTaxValue()
+    const totalSum = getTotalPrice() + getTaxValue()
 
     return(
         <PurchaseContainer>
@@ -95,7 +95,7 @@ const Purchase = ({ cartItems, onRemove, onAdd }) => {
                         <hr />
                         <PricingWrapper theme={cartItems.length && DisplayPricing}>
                             <p>Total do pedido</p>
-                            <p>{currency.format(somaTotal)}</p>
+                            <p>{currency.format(totalSum)}</p>
                         </PricingWrapper>
                     </SubtotalContainer>
                 </ContentWrapper>

@@ -1,4 +1,12 @@
-import { MainContainer, MainWrapper, ContentWrapper, CardContainer, AsideWrapper, MenuP  } from "./styles"
+import { 
+    MainContainer, 
+    MainWrapper, 
+    ContentWrapper, 
+    CardContainer, 
+    AsideWrapper, 
+    MenuP,
+    Disabled
+} from "./styles"
 
 import Carousel from "../Carousel"
 import ListCards from '../ListCards'
@@ -12,15 +20,15 @@ import { useState } from "react"
     return(
         <MainContainer>
             <MainWrapper>
-                <Carousel />
+                {/* <Carousel /> TODO CAROUSEL COMPONENT */}
                 <ContentWrapper>
                     <AsideWrapper>
                         <MenuP isActive={category === 0} onClick={() => setCategory(0)}>
                             Destaques
                         </MenuP>
-                        <MenuP>
+                        <Disabled>
                             Pacotes
-                        </MenuP>
+                        </Disabled>
                         <MenuP isActive={category === 1} onClick={() => setCategory(1)}>
                             Livros fonte
                         </MenuP>
@@ -30,9 +38,9 @@ import { useState } from "react"
                         <MenuP isActive={category === 2} onClick={() => setCategory(3)}>
                             Dados
                         </MenuP>
-                        <MenuP>
+                        <Disabled>
                             Mapas
-                        </MenuP>
+                        </Disabled>
                     </AsideWrapper>
                     <CardContainer>
                         <ListCards onAdd={onAdd} preorder={category === 0} featured={category === 0} categoryId={category}/>
