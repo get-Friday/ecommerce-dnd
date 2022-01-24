@@ -5,7 +5,7 @@ import ListCards from '../ListCards'
 
 import { useState } from "react"
 
-const Main = ({ onAdd }) => {
+    const Main = ({ onAdd }) => {
 
     const [category, setCategory] = useState(0)
 

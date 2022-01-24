@@ -51,7 +51,7 @@ const Card = ({ productId, onAdd }) => {
                 <h1>{product.name_product}</h1>
                 <p>{product.description}</p>
                 <p>Disponível | {currency.format(product.price)}</p>
-                <ButtonApp onAdd={() => onAdd(product)}>Comprar</ButtonApp>
+                <ButtonApp action={() => onAdd(product)}>Comprar</ButtonApp>
             </DetailsWrapper>
         </CardWrapper>
     )

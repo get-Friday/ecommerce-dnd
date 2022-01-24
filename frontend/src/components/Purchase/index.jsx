@@ -1,11 +1,42 @@
-import { PurchaseContainer, PurchaseWrapper, Break, ContentWrapper, TableContainer, ProductsTable, TableBody, TableRow, TableHeader, TableData, SubtotalContainer, Oversize, Undersize, AlignLeft} from './styles'
+import { 
+    PurchaseContainer, 
+    PurchaseWrapper, 
+    Break, 
+    ContentWrapper, 
+    TableContainer, 
+    ProductsTable, 
+    TableBody, 
+    TableRow, 
+    TableHeader, 
+    TableData, 
+    SubtotalContainer, 
+    PricingWrapper, 
+    Oversize, 
+    Undersize, 
+    AlignLeft, 
+    DisplayPricing
+} from './styles'
+
+import Button from '../Button'
+import { addProduct, removeProduct } from '../Button/styles'
 
 const currency = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
 })
 
-const Purchase = ({ cartItems }) => {
+const Purchase = ({ cartItems, onRemove, onAdd }) => {
+
+    const getTotalPrice = () => {
+        let totalPrice = 0
+        cartItems.map(product => totalPrice = totalPrice + (product.price * product.qty))
+        return totalPrice
+    }   
+
+    // ICMS SC = 12%
+    const getTaxValue = (totalPrice = getTotalPrice()) => totalPrice = totalPrice * 0.12
+
+    const somaTotal = getTotalPrice() + getTaxValue()
 
     return(
         <PurchaseContainer>
@@ -42,7 +73,8 @@ const Purchase = ({ cartItems }) => {
                                                 {currency.format(product.price * product.qty)}
                                             </TableData>
                                             <TableData>
-                                                Ação
+                                                <Button theme={addProduct} action={() => onAdd(product)}>+</Button>
+                                                <Button theme={removeProduct} action={() => onRemove(product)}>-</Button>
                                             </TableData>
                                         </TableRow>
                                     )
@@ -52,6 +84,19 @@ const Purchase = ({ cartItems }) => {
                     </TableContainer>
                     <SubtotalContainer>
                         SUBTOTAL
+                        <PricingWrapper theme={cartItems.length && DisplayPricing}>
+                            <p>Subtotal</p>
+                            <p>{currency.format(getTotalPrice())}</p>
+                        </PricingWrapper>
+                        <PricingWrapper theme={cartItems.length && DisplayPricing}>
+                            <p>Valor imposto</p>
+                            <p>{currency.format(getTaxValue())}</p>
+                        </PricingWrapper>
+                        <hr />
+                        <PricingWrapper theme={cartItems.length && DisplayPricing}>
+                            <p>Total do pedido</p>
+                            <p>{currency.format(somaTotal)}</p>
+                        </PricingWrapper>
                     </SubtotalContainer>
                 </ContentWrapper>
             </PurchaseWrapper>

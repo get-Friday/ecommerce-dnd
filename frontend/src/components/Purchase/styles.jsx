@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+//  SETTING WIDTH SIZE
+
 export const PurchaseContainer = styled.div`
     width: 100%;
 
@@ -17,6 +19,8 @@ export const PurchaseWrapper = styled.div`
     flex-direction: column;
 `
 
+// CONTENT CONTAINERS
+
 export const ContentWrapper = styled.div`
     display: flex;
 
@@ -24,13 +28,29 @@ export const ContentWrapper = styled.div`
 `
 
 export const TableContainer = styled.div`
-    display: flex;
     flex-direction: column;
+
+    width: max-content;
 `
 
 export const SubtotalContainer = styled.div`
-    display: flex;
     flex-direction: column;
+
+    width: 20%;
+
+    hr {
+        width: 100%;
+    }
+`
+
+export const PricingWrapper = styled.div`
+    display: ${props => props.theme.display};
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+        padding: 5px;
+    }
 `
 
 export const Break = styled.hr`
@@ -99,4 +119,14 @@ export const Oversize = {
 
 export const Undersize = {
     size: '71px'
+}
+
+PricingWrapper.defaultProps = {
+    theme: {
+        display: 'none'
+    }
+}
+
+export const DisplayPricing = {
+    display: 'flex'
 }

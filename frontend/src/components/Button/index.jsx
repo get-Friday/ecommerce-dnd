@@ -1,9 +1,9 @@
 import { Button } from "./styles";
 
-const ButtonApp = ({ children, onAdd }) => {
+const ButtonApp = ({ children, action, theme }) => {
 
     return(
-        <Button onClick={onAdd}>
+        <Button onClick={action} theme={theme}>
             {children}
         </Button>
     )
