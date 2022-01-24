@@ -35,7 +35,7 @@ import { useState } from "react"
                         <MenuP isActive={category === 2} onClick={() => setCategory(2)}>
                             Aventuras
                         </MenuP>
-                        <MenuP isActive={category === 2} onClick={() => setCategory(3)}>
+                        <MenuP isActive={category === 3} onClick={() => setCategory(3)}>
                             Dados
                         </MenuP>
                         <Disabled>
