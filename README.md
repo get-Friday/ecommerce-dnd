@@ -35,4 +35,4 @@ Para o json-server acesse `backend\package.json` alterando a linha 7 e `frontend
 - ☑️ Comentários com avaliação em produto
 - ☑️ Carrossel com notícias
 
-Tempo investido no projeto [![wakatime](https://wakatime.com/badge/user/76d904ba-8aea-4f36-aff8-a2c863032956/project/11820ae4-1485-4a0e-bafb-895d68e5e927.svg)](https://wakatime.com/badge/user/76d904ba-8aea-4f36-aff8-a2c863032956/project/11820ae4-1485-4a0e-bafb-895d68e5e927)
+[![wakatime](https://wakatime.com/badge/user/76d904ba-8aea-4f36-aff8-a2c863032956/project/11820ae4-1485-4a0e-bafb-895d68e5e927.svg)](https://wakatime.com/badge/user/76d904ba-8aea-4f36-aff8-a2c863032956/project/11820ae4-1485-4a0e-bafb-895d68e5e927)
