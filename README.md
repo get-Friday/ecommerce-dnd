@@ -33,5 +33,6 @@ Para o json-server acesse `backend\package.json` alterando a linha 7 e `frontend
 - ☑️ Barra de pesquisa de produto
 - ☑️ Sistema de login
 - ☑️ Comentários com avaliação em produto
+- ☑️ Carrossel com notícias
 
 Tempo investido no projeto [![wakatime](https://wakatime.com/badge/user/76d904ba-8aea-4f36-aff8-a2c863032956.svg)](https://wakatime.com/@76d904ba-8aea-4f36-aff8-a2c863032956)
