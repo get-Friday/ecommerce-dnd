@@ -46,7 +46,7 @@ const App = () => {
     return (
         <>
             <GlobalStyle />
-            <Header />
+            <Header cartSize={cartItems.length}/>
             <Routes>
                 <Route exact path='/' element={
                     <Main 

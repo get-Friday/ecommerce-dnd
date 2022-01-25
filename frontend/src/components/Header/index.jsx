@@ -1,4 +1,13 @@
-import { HeaderContainer, HeaderWrapper, Logo, ShoppingContainer, UserContainer, CartContainer, TextContainer } from './styles'
+import { 
+    HeaderContainer, 
+    HeaderWrapper, 
+    Logo, 
+    ShoppingContainer, 
+    UserContainer, 
+    CartContainer, 
+    TextContainer,
+    CartSize
+} from './styles'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
@@ -7,7 +16,8 @@ import { Link } from 'react-router-dom'
 
 import SearchBar from '../SearchBar'
 
-const Header = () => {
+const Header = ({ cartSize }) => {
+    const display = cartSize && 'display'
     return(
         <HeaderContainer>
             <HeaderWrapper>
@@ -24,7 +34,9 @@ const Header = () => {
                     </UserContainer>
                     <CartContainer>
                         <Link to='/purchase'>
-                            <FontAwesomeIcon icon={faShoppingCart} />Carrinho
+                            <CartSize display={display}>{cartSize}</CartSize>
+                            <FontAwesomeIcon icon={faShoppingCart} />
+                            Carrinho
                         </Link>
                     </CartContainer>
                 </ShoppingContainer>

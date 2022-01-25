@@ -4,6 +4,8 @@ export const HeaderContainer = styled.div`
     width: 100%;
     height: 75px;
 
+    position: fixed;
+
     background-color: black;
 
     display: flex;
@@ -58,6 +60,23 @@ export const CartContainer = styled.div`
     font-size: 1.5em;
 
     a {
+        display: flex;
+        align-items: center;
+
         color: #FFF;
     }
+`
+
+export const CartSize = styled.div`
+    padding: 5px 9px;
+    margin-right: 5px;
+
+    font-size: 12px;
+    text-align: center;
+
+    background-color: #f00;
+
+    border-radius: 20px;
+
+    display: ${props => props.display ? 'inline' : 'none'};
 `
