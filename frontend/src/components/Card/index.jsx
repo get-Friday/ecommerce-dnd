@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import api from '../../services/Api'
 
-import { DetailsWrapper, ImageContainer, ImageLink, CardWrapper, TagCard, displayTag } from './styles'
+import { 
+    DetailsWrapper, 
+    ImageContainer, 
+    ImageLink, 
+    CardWrapper, 
+    TagCard, 
+    displayTag 
+} from './styles'
 
 import ButtonApp from '../Button'
 
@@ -33,7 +40,7 @@ const Card = ({ productId, onAdd }) => {
         .get(`/productsList/${productId}`)
         .then((res) => setProduct(res.data))
     }, [productId])
- 
+
     return(
         <CardWrapper>
             <ImageContainer>
@@ -51,7 +58,9 @@ const Card = ({ productId, onAdd }) => {
                 <h1>{product.name_product}</h1>
                 <p>{product.description}</p>
                 <p>Disponível | {currency.format(product.price)}</p>
-                <ButtonApp action={() => onAdd(product)}>Comprar</ButtonApp>
+                <ButtonApp action={() => onAdd(product)}>
+                        Comprar
+                </ButtonApp>
             </DetailsWrapper>
         </CardWrapper>
     )

@@ -25,7 +25,10 @@ const SourceBooks = ({ featured, categoryId, onAdd }) => {
     })
     
     return sortPreorder.map( el => (
-        <Card onAdd={onAdd} productId={el.id} />
+        <Card 
+            onAdd={onAdd}
+            productId={el.id} 
+        />
     ))
 }
 
