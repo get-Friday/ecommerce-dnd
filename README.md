@@ -4,12 +4,12 @@ Esse é um projeto feito no Bootcamp na Digital Inovation One para o Banco Inter
 
 ## Como executar o projeto
 
-Uma vez no diretório do projeto, rode o comando abaixo em ambos diretórios /frontend e /backend:
+Uma vez no diretório do projeto, instale todas as dependências e inicie o BD e o site com o comando abaixo em ambos diretórios /frontend e /backend:
 
 ### `npm start`
 
-Assim o site estará disponível em\
-Será [http://localhost:3000](http://localhost:3000) no seu navegador.
+A porta será 3000 para o site e 30001 para o BD\
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 Caso precise alterar alguma rota\
 Para o json-server acesse `backend\package.json` alterando a linha 7 e `frontend\src\services\Api.js` alterando a linha 4
