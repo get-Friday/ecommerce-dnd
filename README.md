@@ -26,7 +26,8 @@ Para o json-server acesse `backend\package.json` alterando a linha 7 e `frontend
 
 - Muitos produtos incríveis
 - Consumo de banco de dados (GET)
-- Carrinho de produtos com State
+- Roteamento de paginas
+- Carrinho de produtos com Estado
 
 #### O que irei implementar
 
