@@ -8,7 +8,7 @@ Uma vez no diretório do projeto, instale todas as dependências e inicie o BD e
 
 ### `npm start`
 
-A porta será 3000 para o site e 30001 para o BD\
+A porta será 3000 para o site e 3001 para o BD\
 Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 Caso precise alterar alguma rota\
