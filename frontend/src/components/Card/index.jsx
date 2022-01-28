@@ -13,7 +13,7 @@ import {
 import ButtonApp from '../Button'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-regular-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const initialState = {
     id: '',

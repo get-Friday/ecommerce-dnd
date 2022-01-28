@@ -30,8 +30,10 @@ export const DetailsWrapper = styled.div`
 export const TagCard = styled.div`
     display: ${props => props.theme.display};
 
-    background-color: #C4C4C4;
-    border-radius: 18px;
+    color: #FFF;
+
+    background-color: #34454F;
+    border-radius: 9px;
 
     padding: 10px;
 
